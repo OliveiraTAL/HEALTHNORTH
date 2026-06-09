@@ -3,30 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/HealthNorthOFFICIAL.ico" type="image/x-icon">
     <title>Health North</title>
+    <link rel="stylesheet" href="style/index.css">    
+
 </head>
 <body>
     <!--Cabeçalho-->
     <header>
-        <h1>Health North</h1>
-        <!--<Nav>egar pelo sites-->
-        <nav>
-            <!--O <a /> é um local para linkar urls diferentes-->
-            <a href="">Home</a>
-            <a href="">Instrumentais</a>
-            <a href="">Descartável</a>
-            <a href="">Equipamento</a>
-            <a href="">Esterializado</a>
-            <a href="">Suprimentos</a>
-            <a href="">Minha conta/Login/Cadastro</a>
-            <a href="">Favoritos</a>
-            <a href="">Carrinho</a>
+    <div class="topo">
+            <div class="left">
+                <img src="assets/HealthNorthOFFICIAL.ico" alt="Logo da Health North, ela é cor roxa gradiente com o N de North/Norte">
+                <h1>Health North</h1>
+                              
+            </div>
             
-             </nav>
+            <div class="center"> 
+        
+                <!--<Nav>egar pelo sites, colocando o seletor de classe com o CSS3-->     
+                <nav class="menu">
+                <!--O <a /> é um local para linkar urls diferentes-->
+                    <a id="idinstrumentais" href="">Instrumentais</a>
+                    <a href="">Descartáveis</a>
+                    <a href="">Equipamentos</a>
+                    <a href="">Esterializados</a>
+                    <a href="">Suprimentos</a>
+                </nav>
+            </div>
+
+                <div class="right-icons"> 
+                    <div class="caixa-pesquisa">
+                        <input type="text" placeholder="Buscar produtos">
+                        <img src="assets/search.png" alt="Lupa de pesquisa">
+                    </div>               
+                    <a href="user.html"> <img src="assets/user.png" alt="usuário"></a>
+                    <a href="favorites.html"> <img src="assets/heart.png" alt="favoritos"></a>
+                    <a href="cart.html"><img src="assets/shopping-cart.png" alt="carrinho de compras"></a>
+                </div>
+    </div>    
 
     </header>
-
-
 
 </body>
 </html>
