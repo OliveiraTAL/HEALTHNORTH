@@ -33,6 +33,7 @@ h1 {
 .menu {
     background-color: #FAF8FF;
 /* Seletor de classe: seleciona todos os elementos com uma classe específica utilizando o ( . ) */
+    transform: translateX(100px); /* Distância do menu em relação ao topo da página */
 }
 
 nav a {
@@ -72,7 +73,7 @@ nav a {
     margin-left: 0px;
 }
 
-header img{
+.left img{
     height:20px;
     width: 20px;
     transform: translateX(65px);
@@ -96,6 +97,15 @@ header img{
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
+    transform: translateX(-20px);
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transform: translateX(-50px);
+    position: relative;
 }
 
 header {
@@ -104,6 +114,7 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid #C7C4D8; /* borda inferior do cabeçalho */
     padding: 10px 20px; /* espaçamento interno do cabeçalho */}
+
 .topo {
     display: flex;
     align-items: center;
@@ -147,85 +158,109 @@ header {
 }
 
 .icones a {
-    display: flex;
+    display: auto;
     flex-direction: column;
     align-items: center;
     gap: 4px;
     text-decoration: none; /* Remove o sublinhado dos links */
-    display:grid;
-    grid-template-columns: 40px auto;
-    grid-template-rows: auto auto;
+    margin: 0 8px; /* Espaçamento entre os links */
 }
 
 .banner {
-    background-color: #FAF8FF;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    text-align: left;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Imagem do banner */
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    align-items: center;
+    transform: translateX(-20px);
+}
+
+/* Conteúdo sobre a imagem */
+.orfeta-escopo {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    background-color:transparent;
+    width: 500px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .oferta input {
-    padding: 10px; /* distancia entre as bordas do campo de oferta de lançamento */
-    border: 1px solid #4F46E5; /* borda do campo de oferta de lançamento */
-    border-radius: 20px; /* arredondamento das bordas do campo de oferta de lançamento */
-    font-family: inter, sans-serif;
-    width: 10%;
-    height: auto;
-    color: #DAD7FF; /* cor do texto do campo de oferta de lançamento */
-    text-align: center;
-    background-color: #4F46E5; /* cor de fundo do campo de oferta de lançamento */
-    text-transform: uppercase; /* transforma o texto do campo de oferta de lançamento em maiúsculo */
-    text-decoration: none; /* Remove o sublinhado do texto do campo de oferta de lançamento */
-    transform: translateY(80px);
-    transform: translateX(100px);
-    font-weight: semi-bold; /* peso do texto do campo de oferta de lançamento */
+    width: 180px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #4f46e5;
+    color: #fff;
+   
 }
 
-.oferta input::placeholder {
-  color: #DAD7FF;
+.oferta{
+    background-color:transparent;
+}
+
+.oferta2{
+    background-color:transparent;
 }
 
 .oferta2 h2 {
-    color: #4F46E5; /* cor do texto do título da oferta de lançamento */
-    font-size: 36px; /* tamanho do texto do título da oferta de lançamento */
-    font-weight: bold; /* peso do texto do título da oferta de lançamento */
-    text-align: left;
-    transform: translateY(80px);
-    transform: translateX(100px);
+    font-size: 3rem;
+    color: #4338ca;
+    margin: 0;
+    background-color:transparent;
 }
 
-.oferta2 img {
-    width: 350px;
-    height: auto;
-    transform: translateX(500px);
-    position: absolute;
-}
-
-p {
-    color: #6B7280; /* cor do texto do parágrafo da oferta de lançamento */
-    font-size: 16px; /* tamanho do texto do parágrafo da oferta de lançamento */
-    text-align: left;
-    transform: translateY(80px);
-    transform: translateX(100px);
+.orfeta-escopo p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+    background-color:transparent;
 }
 
 .oferta3 input {
-    padding: 10px; /* distancia entre as bordas do campo de ver oferta */
-    border: 1px solid #4F46E5; /* borda do campo de ver oferta */
-    border-radius: 10px; /* arredondamento das bordas do campo de ver oferta */
-    font-family: inter, sans-serif;
-    width: 10%;
-    height: auto;
-    color: #DAD7FF; /* cor do texto do campo de ver oferta */
-    text-align: center;
-    background-color: #4F46E5; /* cor de fundo do campo de ver oferta */
-    text-transform: uppercase; /* transforma o texto do campo de ver oferta em maiúsculo */
-    text-decoration: none; /* Remove o sublinhado do texto do campo de ver oferta */
-    transform: translateY(80px);
-    transform: translateX(100px);
-    font-weight: semi-bold; /* peso do texto do campo de ver oferta */
+    width: 140px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    
 }
-.oferta3 input::placeholder {
-  color: #DAD7FF;
+.oferta3{
+    background-color:transparent;
+}
+
+/* Camada clara sobre a imagem */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+    z-index: 1;
+}
+
+.oferta input::placeholder{
+    color: #fff;
+}
+.oferta3 input::placeholder{
+    color: #fff;
 }
