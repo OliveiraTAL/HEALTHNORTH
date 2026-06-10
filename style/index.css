@@ -98,8 +98,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-}
+    border-bottom: 1px solid #C7C4D8; /* borda inferior do cabeçalho */
+    padding: 10px 20px; /* espaçamento interno do cabeçalho */}
 .topo {
     display: flex;
     align-items: center;
@@ -136,4 +136,86 @@ header {
     font-size: 12px; /* tamanho do texto dos ícones de usuário, favoritos e carrinho de compras */
     display: block;
     margin-top: 2px; /* distancia entre o ícone e o texto dos ícones de usuário, favoritos e carrinho de compras */
+}
+.icones a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display:grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto auto;
+}
+
+.banner {
+    background-color: #FAF8FF;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+.oferta input {
+    padding: 10px; /* distancia entre as bordas do campo de oferta de lançamento */
+    border: 1px solid #4F46E5; /* borda do campo de oferta de lançamento */
+    border-radius: 20px; /* arredondamento das bordas do campo de oferta de lançamento */
+    font-family: inter, sans-serif;
+    width: 10%;
+    height: auto;
+    color: #DAD7FF; /* cor do texto do campo de oferta de lançamento */
+    text-align: center;
+    background-color: #4F46E5; /* cor de fundo do campo de oferta de lançamento */
+    text-transform: uppercase; /* transforma o texto do campo de oferta de lançamento em maiúsculo */
+    text-decoration: none; /* Remove o sublinhado do texto do campo de oferta de lançamento */
+    transform: translateY(80px);
+    transform: translateX(100px);
+    font-weight: semi-bold; /* peso do texto do campo de oferta de lançamento */
+}
+
+.oferta input::placeholder {
+  color: #DAD7FF;
+}
+
+.oferta2 h2 {
+    color: #4F46E5; /* cor do texto do título da oferta de lançamento */
+    font-size: 36px; /* tamanho do texto do título da oferta de lançamento */
+    font-weight: bold; /* peso do texto do título da oferta de lançamento */
+    text-align: left;
+    transform: translateY(80px);
+    transform: translateX(100px);
+}
+
+.oferta2 img {
+    width: 350px;
+    height: auto;
+    transform: translateX(500px);
+    position: absolute;
+}
+
+p {
+    color: #6B7280; /* cor do texto do parágrafo da oferta de lançamento */
+    font-size: 16px; /* tamanho do texto do parágrafo da oferta de lançamento */
+    text-align: left;
+    transform: translateY(80px);
+    transform: translateX(100px);
+}
+
+.oferta3 input {
+    padding: 10px; /* distancia entre as bordas do campo de ver oferta */
+    border: 1px solid #4F46E5; /* borda do campo de ver oferta */
+    border-radius: 10px; /* arredondamento das bordas do campo de ver oferta */
+    font-family: inter, sans-serif;
+    width: 10%;
+    height: auto;
+    color: #DAD7FF; /* cor do texto do campo de ver oferta */
+    text-align: center;
+    background-color: #4F46E5; /* cor de fundo do campo de ver oferta */
+    text-transform: uppercase; /* transforma o texto do campo de ver oferta em maiúsculo */
+    text-decoration: none; /* Remove o sublinhado do texto do campo de ver oferta */
+    transform: translateY(80px);
+    transform: translateX(100px);
+    font-weight: semi-bold; /* peso do texto do campo de ver oferta */
+}
+.oferta3 input::placeholder {
+  color: #DAD7FF;
 }
