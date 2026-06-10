@@ -18,6 +18,9 @@ h1 {
     color: #3525CD;
     font-weight: bold;
 /* Seletor de tipo: seleciona todos os elementos do tipo especificado, como h1, p, div, etc. */
+    font-size: 24px; /* Tamanho do texto do título */
+    text-align: center; /* Alinhamento do texto do título */
+    transform: translateX(65px); /* Distância do título em relação ao topo da página */
 }
 
 #idinstrumentais {
@@ -26,7 +29,6 @@ h1 {
     font-weight: bold; /* Peso do texto [se estará em negrito por exemplo]. */
 /* Seletor de id: seleciona um elemento especificado com seu ID utilizando ( # ) */
 }
-
 
 .menu {
     background-color: #FAF8FF;
@@ -39,6 +41,7 @@ nav a {
     margin: 0 5px; /* Espaçamento entre os links */
     font-weight: medium; /* Peso do texto [se estará em negrito por exemplo]. */
 }
+
 .left {
     display: flex;
     align-items: center;
@@ -70,9 +73,9 @@ nav a {
 }
 
 header img{
-    height:30px;
-    width: 30px;
-    
+    height:20px;
+    width: 20px;
+    transform: translateX(65px);
 }
 
 /* Configurando a caixa de pesquisa */
@@ -94,6 +97,7 @@ header img{
     margin-bottom: 10px;
     position: relative;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -109,6 +113,7 @@ header {
     flex-wrap: nowrap;
 
 }
+
 .caixa-pesquisa img {
     position: absolute;
     right: 10px;
@@ -120,10 +125,12 @@ header {
     left: 10px;
     top: 50%;
 }
+
 .caixa-pesquisa placeholder {
     color: #6B7280; /* cor do texto do placeholder */
     padding-left: 50px; /* distancia entre o texto do placeholder e a borda esquerda do campo de pesquisa */
 }
+
 .right-icons a small {
     color: #6B7280; /* cor do texto dos ícones de usuário, favoritos e carrinho de compras */
     font-size: 12px; /* tamanho do texto dos ícones de usuário, favoritos e carrinho de compras */
@@ -131,12 +138,14 @@ header {
     margin-top: 2px; /* distancia entre o ícone e o texto dos ícones de usuário, favoritos e carrinho de compras */
 
 }
+
 .icones a p {
     color: #6B7280; /* cor do texto dos ícones de usuário, favoritos e carrinho de compras */
     font-size: 12px; /* tamanho do texto dos ícones de usuário, favoritos e carrinho de compras */
     display: block;
     margin-top: 2px; /* distancia entre o ícone e o texto dos ícones de usuário, favoritos e carrinho de compras */
 }
+
 .icones a {
     display: flex;
     flex-direction: column;
@@ -155,6 +164,7 @@ header {
     border-radius: 10px;
     text-align: left;
 }
+
 .oferta input {
     padding: 10px; /* distancia entre as bordas do campo de oferta de lançamento */
     border: 1px solid #4F46E5; /* borda do campo de oferta de lançamento */
