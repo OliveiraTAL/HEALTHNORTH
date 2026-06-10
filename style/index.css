@@ -1,0 +1,266 @@
+/* Comentários de várias linhas,
+CSS iniciando...
+*/
+
+* {
+    background-color: #FAF8FF;
+    font-family: inter, sans-serif;
+/*Seletor universal: o asterisco ( * ) é um seletor universal que seleciona todos os elementos da página. */
+}
+
+header {
+    background-color: #FAF8FF;
+    color: #3525CD; 
+}
+
+h1 {
+    background-color: #FAF8FF;
+    color: #3525CD;
+    font-weight: bold;
+/* Seletor de tipo: seleciona todos os elementos do tipo especificado, como h1, p, div, etc. */
+    font-size: 24px; /* Tamanho do texto do título */
+    text-align: center; /* Alinhamento do texto do título */
+    transform: translateX(65px); /* Distância do título em relação ao topo da página */
+}
+
+#idinstrumentais {
+    color: #3525CD;
+    text-decoration: underline;
+    font-weight: bold; /* Peso do texto [se estará em negrito por exemplo]. */
+/* Seletor de id: seleciona um elemento especificado com seu ID utilizando ( # ) */
+}
+
+.menu {
+    background-color: #FAF8FF;
+/* Seletor de classe: seleciona todos os elementos com uma classe específica utilizando o ( . ) */
+    transform: translateX(100px); /* Distância do menu em relação ao topo da página */
+}
+
+nav a {
+    color: #464555; /* Cor do texto do menu de navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 5px; /* Espaçamento entre os links */
+    font-weight: medium; /* Peso do texto [se estará em negrito por exemplo]. */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    font-size: 16px;
+    transform: translateX(-300px);
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: right;
+    color: #6B7280; /* Cor do texto do menu de navegação */
+    font-weight: medium;
+    font-family: 16px;
+}
+.right-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+}
+
+.left img{
+    height:20px;
+    width: 20px;
+    transform: translateX(65px);
+}
+
+/* Configurando a caixa de pesquisa */
+.caixa-pesquisa input{
+    padding: 10px; /* distancia entre as bordas do campo de pesquisa */
+    border: 1px solid #C7C4D8; /* borda do campo de pesquisa */
+    border-radius: 20px; /* arredondamento das bordas do campo de pesquisa */
+    font-family: inter, sans-serif;
+    width: 175px;
+    height: auto;
+    color: #6B7280; /* cor do texto do campo de pesquisa */
+    padding-left: 40px; /* distancia entre o texto do campo de pesquisa e a borda esquerda do campo de pesquisa */
+}
+
+.caixa-pesquisa {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translateX(-20px);
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transform: translateX(-50px);
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #C7C4D8; /* borda inferior do cabeçalho */
+    padding: 10px 20px; /* espaçamento interno do cabeçalho */}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
+
+}
+
+.caixa-pesquisa img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    left: 10px;
+    top: 50%;
+}
+
+.caixa-pesquisa placeholder {
+    color: #6B7280; /* cor do texto do placeholder */
+    padding-left: 50px; /* distancia entre o texto do placeholder e a borda esquerda do campo de pesquisa */
+}
+
+.right-icons a small {
+    color: #6B7280; /* cor do texto dos ícones de usuário, favoritos e carrinho de compras */
+    font-size: 12px; /* tamanho do texto dos ícones de usuário, favoritos e carrinho de compras */
+    display: block;
+    margin-top: 2px; /* distancia entre o ícone e o texto dos ícones de usuário, favoritos e carrinho de compras */
+
+}
+
+.icones a p {
+    color: #6B7280; /* cor do texto dos ícones de usuário, favoritos e carrinho de compras */
+    font-size: 12px; /* tamanho do texto dos ícones de usuário, favoritos e carrinho de compras */
+    display: block;
+    margin-top: 2px; /* distancia entre o ícone e o texto dos ícones de usuário, favoritos e carrinho de compras */
+}
+
+.icones a {
+    display: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 8px; /* Espaçamento entre os links */
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Imagem do banner */
+.banner-img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    align-items: center;
+    transform: translateX(-20px);
+}
+
+/* Conteúdo sobre a imagem */
+.orfeta-escopo {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    background-color:transparent;
+    width: 500px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.oferta input {
+    width: 180px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #4f46e5;
+    color: #fff;
+   
+}
+
+.oferta{
+    background-color:transparent;
+}
+
+.oferta2{
+    background-color:transparent;
+}
+
+.oferta2 h2 {
+    font-size: 3rem;
+    color: #4338ca;
+    margin: 0;
+    background-color:transparent;
+}
+
+.orfeta-escopo p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+    background-color:transparent;
+}
+
+.oferta3 input {
+    width: 140px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    
+}
+.oferta3{
+    background-color:transparent;
+}
+
+/* Camada clara sobre a imagem */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55);
+    z-index: 1;
+}
+
+.oferta input::placeholder{
+    color: #fff;
+}
+.oferta3 input::placeholder{
+    color: #fff;
+}
