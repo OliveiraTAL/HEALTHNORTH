@@ -313,19 +313,6 @@ header {
     background-color:#fff;
 }
 
-.cabecalho-produtos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.cabecalho-produtos h2 {
-    margin: 0;
-    background-color:#fff;
-    background: transparent
-}
-
 .vertodos {
     background: #fff;
     border: none;
@@ -335,7 +322,7 @@ header {
     padding-left: 95%;
     font-size: 16px;
 }
-.produto {
+.produto1 {
     background-color: #fff;
     border: 1px solid #C7C4D8;
     border-radius: 20px;
@@ -344,14 +331,14 @@ header {
     width: 250px;
     display: inline-block;
 }
-.produto p {
+.produto1 p {
     color: #6B7280;
     font-size: 14px;
     margin: 10px 0;
     background-color:transparent;
 }
 
-.produto h3 {
+.produto1 h3 {
     color: #131B2E;
     font-size: 18px;
     margin: 10px 0;
@@ -359,9 +346,48 @@ header {
 
 }
 
-.produto img {
+.produto1 img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
+
+.addcarrinho1 {
+    color: #3525CD;
+    font-size: 16px;
+    border-color: #3525CD;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 15px;
+}
+
+.produto2 {
+    background-color: #fff;
+    border: 1px solid #C7C4D8;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+
+.preco2 {
+    background-color: #fff;
+    text-align: left;
+    font-weight: bold;
+    color: #3525CD;
+}
+
+ /* Tive que adicionar 2 .promocao para funcionar */
+.promocao {
+    background-color: #fff;
+    text-align: right
+}
+
+.promocao {
+    color: #777587;
+    text-decoration: line-through;
+    text-align: center;   
+}
+ /* Tive que adicionar 2 .promocao para funcionar */
