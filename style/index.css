@@ -498,7 +498,6 @@ header {
     border: 1px solid #C7C4D8;
     border-radius: 20px;
     padding: 20px;
-
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -541,4 +540,11 @@ header {
     background: transparent;
     color: #3525CD;
     cursor: pointer;
+}
+
+.rodape {
+    color: #131B2E;
+    border: #131B2E;
+    text-align: left;
+    margin-left: 15%;
 }
