@@ -296,23 +296,7 @@ header {
 .titulo-produtos a{
     text-decoration: none;
     color: #3525CD;
-    font-weight: medium;
-}
-
-.butaovertd {
-    display: flex;
-    justify-content: right;
-
-}
-
-.vertodos {
-    background-color: transparent;
-    border: none;
-    color: #4f46e5;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    padding-left: 95%;
+    font-weight: medium
 }
 
 .produtos-destaque {
@@ -328,16 +312,7 @@ header {
     margin: 35px 0;
 }
 
-.vertodos {
-    background: #fff;
-    border: none;
-    color: #4f46e5;
-    cursor: pointer;
-    padding: 0;
-    padding-left: 95%;
-    font-size: 16px;
-}
-
+/* Tudo daqui para baixo será lixo: deixei apenas para ter referência, estarei avisando onde o lixo terminará ;) */
 .produto1 {
     background-color: #fff;
     border: 1px solid #C7C4D8;
@@ -508,10 +483,11 @@ header {
     padding-bottom: 15px;
     margin: -5px 0;
 }
+/* Tudo daqui para cima será lixo: deixei apenas para ter referência*/
 
 .lista-produtos {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin-top: 30px;
     background-color: #fff;
@@ -522,7 +498,7 @@ header {
     border: 1px solid #C7C4D8;
     border-radius: 20px;
     padding: 20px;
-    width: 300px;
+
     text-align: center;
     display: flex;
     flex-direction: column;
