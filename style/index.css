@@ -340,7 +340,7 @@ header {
     margin: 35px 0;
 }
 
-/* Tudo daqui para baixo será lixo: deixei apenas para ter referência, estarei avisando onde o lixo terminará ;) */
+/* Tudo daqui para baixo será lixo, deixei apenas para ter referência, estarei avisando onde o lixo terminará ;) */
 .produto1 {
     background-color: #fff;
     border: 1px solid #C7C4D8;
@@ -511,7 +511,7 @@ header {
     padding-bottom: 15px;
     margin: -5px 0;
 }
-/* Tudo daqui para cima será lixo: deixei apenas para ter referência*/
+/* Tudo daqui para cima será lixo, deixei apenas para ter referência*/
 
 .lista-produtos {
     display: grid;
@@ -711,9 +711,4 @@ header {
     background-color: #C3C0FF;
     height: 20px;
     width: 20px;
-}
-
-.underfoot img{
-    padding: 5px;
-    position: relative;
 }
