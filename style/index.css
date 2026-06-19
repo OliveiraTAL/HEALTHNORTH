@@ -6,6 +6,9 @@ CSS iniciando...
     background-color: #FAF8FF;
     font-family: inter, sans-serif;
     /*Seletor universal: o asterisco ( * ) é um seletor universal que seleciona todos os elementos da página. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -711,4 +714,9 @@ header {
     background-color: #C3C0FF;
     height: 20px;
     width: 20px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
 }
