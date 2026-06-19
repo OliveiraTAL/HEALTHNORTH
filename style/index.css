@@ -513,7 +513,6 @@ header {
 }
 /* Tudo daqui para cima será lixo: deixei apenas para ter referência*/
 
-
 .lista-produtos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -712,4 +711,9 @@ header {
     background-color: #C3C0FF;
     height: 20px;
     width: 20px;
+}
+
+.underfoot img{
+    padding: 5px;
+    position: relative;
 }
