@@ -11,6 +11,28 @@ CSS iniciando...
     box-sizing: border-box;
 }
 
+   :root {
+      --blue-dark:   #1a1a6e;
+      --blue-mid:    #2e2ead;
+      --blue-brand:  #3b3bcc;
+      --blue-light:  #5c5ce8;
+      --purple-soft: #ebebff;
+      --purple-icon: #c7c7ff;
+      --gray-50:     #f9f9fb;
+      --gray-100:    #f0f0f5;
+      --gray-300:    #d1d1e0;
+      --gray-500:    #7a7a99;
+      --gray-700:    #4a4a66;
+      --gray-900:    #1a1a2e;
+      --white:       #ffffff;
+      --price:       #3b3bcc;
+      --badge-bg:    #3b3bcc;
+      --badge-txt:   #ffffff;
+      --radius-card: 12px;
+      --shadow-card: 0 2px 12px rgba(0,0,0,.08);
+    }
+
+
 header {
     background-color: #FAF8FF;
     color: #3525CD;

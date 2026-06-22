@@ -222,10 +222,12 @@ header {
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .imagem-principal img {
-    width: 100%;
+    width: 50%;
     display: block;
     border-radius: 8px;
 }
