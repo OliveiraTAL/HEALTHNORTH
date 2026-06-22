@@ -201,3 +201,113 @@ header {
     margin: 0 8px;
     /* Espaçamento entre os links */
 }
+
+.produto {
+    width: 100%;
+    padding: 40px 80px;
+}
+
+.main {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.descriptionLeft {
+    width: 50%;
+}
+
+.imagem-principal {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.imagem-principal img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.imagens-inferior {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.imagens-inferior img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.descriptionRight {
+    width: 50%;
+}
+
+.tag {
+    display: inline-block;
+    background: #6c4cff;
+    color: white;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.descriptionRight h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.box-preco {
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.box-preco h3 {
+    font-size: 36px;
+    color: #4f46e5;
+}
+
+.box-preco p span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botoes button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrinho {
+    background: #5a3ff0;
+    color: white;
+}
+
+.comprar {
+    background: #e8ebff;
+    color: #333;
+}
