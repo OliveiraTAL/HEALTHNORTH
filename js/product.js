@@ -53,4 +53,9 @@ imagens_mini.forEach(imagem => {
     img.classList.add("img-inferior"); // Jogar a tag criada na Div
 
     /* Criando o código que substitui a imagem principal pela miniatura clicada.*/
+    document.getElementById("img-principal").src=imagem;
+
+    img.addEventListener("click",()=>{
+        document.getElementById("img-principal").src=imagem;
+    })
 });
