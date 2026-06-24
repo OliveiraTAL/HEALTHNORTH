@@ -93,25 +93,25 @@ const numero =
     document.getElementById("quantidade-numero");
 
 document.getElementById("aumentar")
-.addEventListener("click", () => {
+    .addEventListener("click", () => {
 
-    if (quantidadeSelecionada < quantidade) {
+        if (quantidadeSelecionada < quantidade) {
 
-        quantidadeSelecionada++;
+            quantidadeSelecionada++;
 
-        numero.textContent =
-            quantidadeSelecionada;
-    }
-});
+            numero.textContent =
+                quantidadeSelecionada;
+        }
+    });
 
 document.getElementById("diminuir")
-.addEventListener("click", () => {
+    .addEventListener("click", () => {
 
-    if (quantidadeSelecionada > 1) {
+        if (quantidadeSelecionada > 1) {
 
-        quantidadeSelecionada--;
+            quantidadeSelecionada--;
 
-        numero.textContent =
-            quantidadeSelecionada;
-    }
-});
+            numero.textContent =
+                quantidadeSelecionada;
+        }
+    });

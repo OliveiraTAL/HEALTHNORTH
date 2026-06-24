@@ -344,7 +344,7 @@ header {
     border: 1px solid #ddd;
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
 }
 
 .imagem-principal img {
