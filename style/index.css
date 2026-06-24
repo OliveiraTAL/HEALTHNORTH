@@ -3,12 +3,14 @@ CSS iniciando...
 */
 
 * {
-    background-color: #FAF8FF;
-    font-family: inter, sans-serif;
-    /*Seletor universal: o asterisco ( * ) é um seletor universal que seleciona todos os elementos da página. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #FAF8FF;
 }
 
    :root {
@@ -596,46 +598,51 @@ header {
     cursor: pointer;
 }
 
+/* ==========================
+   RODAPÉ
+========================== */
+
 .rodape {
     width: 100%;
-    background: #f3f3fb;
-    border-top: 1px solid #ddd;
-    font-family: Arial, sans-serif;
+    background: #F5F5FD;
+    border-top: 1px solid #D9D9E5;
 }
 
 /* TOPO */
 
 .rodapeTopo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 25px 50px;
-    border-bottom: 1px solid #d9d9e5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 28px 60px;
+    border-bottom: 1px solid #D9D9E5;
 }
 
 .infoItem {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 }
 
 .infoItem img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    background: #C3C0FF;
+    border-radius: 50%;
 }
 
-.infoItem h4 {
-    margin: 0;
-    font-size: 15px;
-    font-weight: 600;
-    color: #333;
+.textoInfo h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #131B2E;
+    margin-bottom: 4px;
 }
 
-.infoItem span {
+.textoInfo span {
     display: block;
-    margin-top: 3px;
-    font-size: 13px;
-    color: #777;
+    font-size: 14px;
+    color: #777587;
 }
 
 /* BOTTOM */
@@ -644,36 +651,42 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 25px 60px;
 }
 
 .bottomEsquerdo h4 {
-    margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
-    color: #222;
+    color: #131B2E;
+    margin-bottom: 8px;
 }
 
 .bottomEsquerdo p {
-    margin-top: 5px;
-    font-size: 12px;
-    color: #666;
+    font-size: 14px;
+    color: #777587;
 }
 
 .bottomDireito {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 24px;
 }
 
 .bottomDireito a {
     text-decoration: none;
-    font-size: 12px;
     color: #555;
+    font-size: 14px;
     transition: 0.3s;
 }
 
 .bottomDireito a:hover {
-    color: #6c63ff;
+    color: #3525CD;
+}
+
+.bottomDireito img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 /* RESPONSIVO */
@@ -681,12 +694,14 @@ header {
 @media (max-width: 768px) {
 
     .rodapeTopo {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
     }
 
     .rodapeBottom {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         text-align: center;
     }
 
@@ -694,51 +709,4 @@ header {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-.rdEsquerdo {
-    display: flex;
-    align-items: center; /* centraliza verticalmente */
-    gap: 10px; /* espaço entre imagem e texto */
-}
-
-.rdEsquerdo img {
-    border: 5px solid #C3C0FF;
-    border-radius: 15px;
-    background-color: #C3C0FF;
-    height: 20px;
-    width: 20px;
-}
-
-.rdCentral {
-    display: flex;
-    align-items: center; /* centraliza verticalmente */
-    gap: 10px; /* espaço entre imagem e texto */
-}
-
-.rdCentral img {
-    border: 5px solid #C3C0FF;
-    border-radius: 15px;
-    background-color: #C3C0FF;
-    height: 20px;
-    width: 20px;
-}
-
-.rdDireito {
-    display: flex;
-    align-items: center; /* centraliza verticalmente */
-    gap: 10px; /* espaço entre imagem e texto */
-}
-
-.rdDireito img {
-    border: 5px solid #C3C0FF;
-    border-radius: 15px;
-    background-color: #C3C0FF;
-    height: 20px;
-    width: 20px;
-}
-
-body {
-    overflow-x: hidden;
-    width: 100%;
 }
