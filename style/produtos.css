@@ -215,25 +215,32 @@ header {
 
 .descriptionLeft {
     width: 50%;
-}
-
-.imagem-principal {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
+    background-color: transparent;
+    align-items: center;
     justify-content: center;
 }
 
+.imagem-principal {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .imagem-principal img {
-    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 420px;
     display: block;
     border-radius: 8px;
 }
 
 .imagens-inferior {
     display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente (se houver altura definida) */
     gap: 15px;
     margin-top: 20px;
 }

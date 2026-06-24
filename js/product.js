@@ -11,8 +11,9 @@ const cores = ["ROXO", "AZUL", "PRETO"];
 const avaliacao = 4.6;
 
 const imagens_mini = [
-    "/assets/product2.avif",
-    "/assets/product3.webp"
+    "/assets/produto1.png",
+    "/assets/produto2.png",
+    "/assets/produto3.png"
 ];
 
 const imagem_main = "/assets/product.webp";
