@@ -1,100 +1,127 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../assets/HealthNorthOFFICIAL.ico"
-      type="image/x-icon"
-    />
-    <title>Health North - Descrição do Produto</title>
-    <link rel="stylesheet" href="../style/produtos.css" />
-  </head>
 
-  <body>
-    <!--Cabeçalho-->
-    <header>
-      <div class="topo">
-        <div class="left">
-          <img
-            src="../assets/HealthNorthOFFICIAL.ico"
-            alt="Logo da Health North, ela é de cor roxa gradiente com o N de North/Norte"
-          />
-          <h1>Health North</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/HealthNorthOFFICIAL.ico" type="image/x-icon" />
+  <title>Health North - Descrição do Produto</title>
+  <link rel="stylesheet" href="../style/produtos.css" />
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header>
+    <div class="topo">
+      <div class="left">
+        <img src="../assets/HealthNorthOFFICIAL.ico"
+          alt="Logo da Health North, ela é de cor roxa gradiente com o N de North/Norte" />
+        <h1>Health North</h1>
+      </div>
+
+      <div class="center">
+        <!--<Nav>egar pelo sites, colocando o seletor de classe com o CSS3-->
+        <nav class="menu">
+          <!--O <a /> é um local para linkar urls diferentes-->
+          <a id="idinstrumentais" href="">Instrumentais</a>
+          <a href="">Descartáveis</a>
+          <a href="">Equipamentos</a>
+          <a href="">Esterializados</a>
+          <a href="">Suprimentos</a>
+        </nav>
+      </div>
+
+      <div class="right-icons">
+        <div class="caixa-pesquisa">
+          <input type="text" placeholder="Buscar produtos" />
+          <img src="../assets/search.png" alt="Lupa de pesquisa" />
+        </div>
+        <div class="icones">
+          <a href="user.html">
+            <img src="../assets/user.png" alt="usuário" /></a>
+          <a href="favorites.html">
+            <img src="../assets/heart.png" alt="favoritos" /></a>
+          <a href="cart.html"><img src="../assets/shoppingcart.png" alt="carrinho de compras" /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="produto">
+    <div class="main">
+      <div class="descriptionLeft">
+        <div class="imagem-principal">
+          <img id="img-principal" src="" alt="Imagem principal do produto" />
         </div>
 
-        <div class="center">
-          <!--<Nav>egar pelo sites, colocando o seletor de classe com o CSS3-->
-          <nav class="menu">
-            <!--O <a /> é um local para linkar urls diferentes-->
-            <a id="idinstrumentais" href="">Instrumentais</a>
-            <a href="">Descartáveis</a>
-            <a href="">Equipamentos</a>
-            <a href="">Esterializados</a>
-            <a href="">Suprimentos</a>
-          </nav>
+        <div class="imagens-inferior" id="img-inferior">
+          <!-- As miniaturas serão inseridas aqui pelo JavaScript -->
         </div>
+      </div>
 
-        <div class="right-icons">
-          <div class="caixa-pesquisa">
-            <input type="text" placeholder="Buscar produtos" />
-            <img src="../assets/search.png" alt="Lupa de pesquisa" />
-          </div>
-          <div class="icones">
-            <a href="user.html">
-              <img src="../assets/user.png" alt="usuário"
-            /></a>
-            <a href="favorites.html">
-              <img src="../assets/heart.png" alt="favoritos"
-            /></a>
-            <a href="cart.html"
-              ><img src="../assets/shoppingcart.png" alt="carrinho de compras"
-            /></a>
+      <div class="descriptionRight">
+        <span class="tag">EDIÇÃO PREMIUM</span>
+
+        <h2>Estetoscópio Clínico Profissional</h2>
+
+        <p class="description">
+          Desenvolvido para profissionais que exigem precisão absoluta. Possui
+          alta sensibilidade acústica para captar as nuances mais sutis,
+          auscultador em aço inoxidável cirúrgico e olivas selantes macias que
+          proporcionam isolamento acústico superior e conforto excepcional
+          durante turnos prolongados.
+        </p>
+
+        <div class="box-preco">
+          <h3>R$ 289,00</h3>
+          <p>De <span>R$ 349,00</span> (-17%)</p>
+
+          <div class="botoes">
+            <button class="carrinho">Adicionar ao Carrinho</button>
+            <button class="comprar">Comprar Agora</button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <article class="produto">
-      <div class="main">
-        <div class="descriptionLeft">
-          <div class="imagem-principal">
-            <img id="img-principal" src="" alt="Imagem principal do produto" />
-          </div>
+    <div id="tamanhos"></div>
 
-          <div class="imagens-inferior" id="img-inferior">
-            <!-- As miniaturas serão inseridas aqui pelo JavaScript -->
-          </div>
-        </div>
+    <div id="cores"></div>
 
-        <div class="descriptionRight">
-          <span class="tag">EDIÇÃO PREMIUM</span>
+    <div class="quantidade">
+      <button id="diminuir">-</button>
+      <span id="quantidade-numero"></span>
+      <button id="aumentar">+</button>
+    </div>
 
-          <h2>Estetoscópio Clínico Profissional</h2>
+    <div class="btn-add-carrinho">
+      <button id="bnt-add-carrinho"></button>
+    </div>
 
-          <p class="description">
-            Desenvolvido para profissionais que exigem precisão absoluta. Possui
-            alta sensibilidade acústica para captar as nuances mais sutis,
-            auscultador em aço inoxidável cirúrgico e olivas selantes macias que
-            proporcionam isolamento acústico superior e conforto excepcional
-            durante turnos prolongados.
-          </p>
+    <div class="btn-comprar">
+      <button id="btn-comprar"></button>
+    </div>
+    
+    <div class="area-frete">
 
-          <div class="box-preco">
-            <h3>R$ 289,00</h3>
-            <p>De <span>R$ 349,00</span> (-17%)</p>
+      <p>CALCULAR FRETE</p>
+      <input id="frete">
+      <button id="btn-calcular-frete">frete</button>
 
-            <div class="botoes">
-              <button class="carrinho">Adicionar ao Carrinho</button>
-              <button class="comprar">Comprar Agora</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
+    </div>
 
-    <!--Linkando o JavaScript com HTML-->
-    <script src="../js/product.js"></script>
-  </body>
+    <div class="pagamento">
+
+      <p>PAGAMENTO</p>
+      <input id="pagamento">
+      <button id="btn-pagamento-pix">PIX</button>
+      <button id="btn-pagamento-cartao">Cartão</button>
+    </div>
+
+  </article>
+
+  <!--Linkando o JavaScript com HTML-->
+  <script src="/js/product.js"></script>
+</body>
+
 </html>
