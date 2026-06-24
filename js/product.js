@@ -16,7 +16,7 @@ const imagens_mini = [
     "/assets/produto3.png"
 ];
 
-const imagem_main = "/assets/product.webp";
+const imagem_main = "/assets/produto1.png";
 
 const descricao = "Desenvolvido para profissionais que exigem precisão absoluta. Possui alta sensibilidade acústica para captar as nuances mais sutis, auscultador em aço inoxidável cirúrgico e olivas selantes macias que proporcionam isolamento acústico superior e conforto excepcional durante turnos prolongados.";
 
