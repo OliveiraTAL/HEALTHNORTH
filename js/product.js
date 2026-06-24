@@ -89,8 +89,7 @@ tamanhos.forEach(tamanho => {
 
 let quantidadeSelecionada = 1;
 
-const numero =
-    document.getElementById("quantidade-numero");
+const numero = document.getElementById("quantidade-numero");
 
 document.getElementById("aumentar")
     .addEventListener("click", () => {
