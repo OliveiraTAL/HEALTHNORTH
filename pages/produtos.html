@@ -47,78 +47,116 @@
     </div>
   </header>
 
-  <article class="produto">
-    <div class="main">
-      <div class="descriptionLeft">
-        <div class="imagem-principal">
-          <img id="img-principal" src="" alt="Imagem principal do produto" />
-        </div>
+ <article class="produto">
 
-        <div class="imagens-inferior" id="img-inferior">
-          <!-- As miniaturas serão inseridas aqui pelo JavaScript -->
-        </div>
+  <div class="main">
+
+    <div class="descriptionLeft">
+
+      <div class="imagem-principal">
+        <img id="img-principal" src="" alt="Imagem principal do produto">
       </div>
 
-      <div class="descriptionRight">
+      <div class="imagens-inferior" id="img-inferior"></div>
+
+    </div>
+
+    <div class="descriptionRight">
+
+      <div class="produto-topo">
+
         <span class="tag">EDIÇÃO PREMIUM</span>
 
-        <h2>Estetoscópio Clínico Profissional</h2>
+        <div class="avaliacao">
+          ★★★★★
+          <span>(128 avaliações)</span>
+        </div>
 
-        <p class="description">
-          Desenvolvido para profissionais que exigem precisão absoluta. Possui
-          alta sensibilidade acústica para captar as nuances mais sutis,
-          auscultador em aço inoxidável cirúrgico e olivas selantes macias que
-          proporcionam isolamento acústico superior e conforto excepcional
-          durante turnos prolongados.
+      </div>
+
+      <h2 id="nome-produto"></h2>
+
+      <p class="description" id="descricao-produto"></p>
+
+      <div class="box-preco">
+
+        <div class="linha-preco">
+
+          <h3 id="preco-promocional"></h3>
+
+          <span id="preco-antigo"></span>
+
+          <span id="desconto"></span>
+
+        </div>
+
+        <p class="parcelamento">
+          Em até 10x sem juros
         </p>
 
-        <div class="box-preco">
-          <h3>R$ 289,00</h3>
-          <p>De <span>R$ 349,00</span> (-17%)</p>
+        <div class="botoes">
 
-          <div class="botoes">
-            <button class="carrinho">Adicionar ao Carrinho</button>
-            <button class="comprar">Comprar Agora</button>
-          </div>
+          <button class="carrinho">
+            Adicionar ao Carrinho
+          </button>
+
+          <button class="comprar">
+            Comprar Agora
+          </button>
+
         </div>
+
       </div>
+
+      <div class="quantidade">
+
+        <button id="diminuir">-</button>
+
+        <span id="quantidade-numero">1</span>
+
+        <button id="aumentar">+</button>
+
+      </div>
+
+      <div class="blocos-inferiores">
+
+        <div class="area-frete">
+
+          <p>📦 CALCULAR FRETE</p>
+
+          <input id="frete" placeholder="00000-000">
+
+          <button id="btn-calcular-frete">
+            OK
+          </button>
+
+        </div>
+
+        <div class="pagamento">
+
+          <p>💳 PAGAMENTO</p>
+
+          <button id="btn-pagamento-pix">
+            PIX
+          </button>
+
+          <button id="btn-pagamento-cartao">
+            CARTÃO
+          </button>
+
+        </div>
+
+      </div>
+
+      <div id="cores"></div>
+
+      <div id="tamanhos"></div>
+
     </div>
 
-    <div id="tamanhos"></div>
+  </div>
 
-    <div id="cores"></div>
-
-    <div class="quantidade">
-      <button id="diminuir">-</button>
-      <span id="quantidade-numero"></span>
-      <button id="aumentar">+</button>
-    </div>
-
-    <div class="btn-add-carrinho">
-      <button id=btn-add-carrinho"></button>
-    </div>
-
-    <div class="btn-comprar">
-      <button id="btn-comprar"></button>
-    </div>
-    
-    <div class="area-frete">
-
-      <p>CALCULAR FRETE</p>
-      <input id="frete">
-      <button id="btn-calcular-frete">frete</button>
-
-    </div>
-
-    <div class="pagamento">
-
-      <p>PAGAMENTO</p>
-      <input id="pagamento">
-      <button id="btn-pagamento-pix">PIX</button>
-      <button id="btn-pagamento-cartao">Cartão</button>
-    </div>
-
-  </article>
+</article>
 
   <!--Linkando o JavaScript com HTML-->
   <script src="/js/product.js"></script>

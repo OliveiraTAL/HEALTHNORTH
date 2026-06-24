@@ -321,7 +321,252 @@ header {
     color: #333;
 }
 
-span{
-    color:#5a3ff0;
-    text-size:18px;
+.produto {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.main {
+    display: flex;
+    gap: 50px;
+}
+
+/* ESQUERDA */
+
+.descriptionLeft {
+    width: 50%;
+}
+
+.imagem-principal {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+.imagem-principal img {
+    width: 100%;
+    display: block;
+}
+
+.imagens-inferior {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.imagens-inferior img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.imagens-inferior img:hover {
+    border-color: #5B43EA;
+}
+
+/* DIREITA */
+
+.descriptionRight {
+    width: 50%;
+}
+
+.produto-topo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background: #5B43EA;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.avaliacao {
+    color: #5B43EA;
+    font-size: 14px;
+}
+
+.descriptionRight h2 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #1F2937;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #6B7280;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* PREÇO */
+
+.box-preco {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 25px;
+    background-color: transparent;
+}
+
+.linha-preco {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#preco-promocional {
+    color: #4338CA;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#preco-antigo {
+    color: #888;
+    text-decoration: line-through;
+}
+
+#desconto {
+    background: #FFE0E0;
+    color: #FF4B4B;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.parcelamento {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botoes button {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carrinho {
+    background: #5B43EA;
+    color: white;
+}
+
+.comprar {
+    background: #E5E9FA;
+    color: #333;
+}
+
+/* QUANTIDADE */
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.quantidade button {
+    width: 40px;
+    height: 40px;
+    background: #5B43EA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#quantidade-numero {
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* FRETE E PAGAMENTO */
+
+.blocos-inferiores {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.area-frete,
+.pagamento {
+    flex: 1;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.area-frete p,
+.pagamento p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.area-frete input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.area-frete button,
+.pagamento button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #5B43EA;
+    color: white;
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CORES E TAMANHOS */
+
+#cores,
+#tamanhos {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#cores button,
+#tamanhos button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
 }
