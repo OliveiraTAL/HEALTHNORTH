@@ -5,9 +5,7 @@ let quantidade = 10;
 
 const nomeProduto = "Estetoscópio Clínico Profissional";
 
-const descricao =
-    "Desenvolvido para profissionais que exigem precisão absoluta. Possui alta sensibilidade acústica para captar as nuances mais sutis, auscultador em aço inoxidável cirúrgico e olivas selantes macias que proporcionam isolamento acústico superior e conforto excepcional durante turnos prolongados.";
-
+const descricao = "Desenvolvido para profissionais que exigem precisão absoluta. Possui alta sensibilidade acústica para captar as nuances mais sutis, auscultador em aço inoxidável cirúrgico e olivas selantes macias que proporcionam isolamento acústico superior e conforto excepcional durante turnos prolongados.";
 
 const imagens_mini = [
     "../assets/produto1.png",
@@ -18,8 +16,7 @@ const imagens_mini = [
 const imgPrincipal =
     document.getElementById("img-principal");
 
-const imgInferior =
-    document.getElementById("img-inferior");
+const imgInferior = document.getElementById("img-inferior");
 
 /* IMAGEM PRINCIPAL */
 
@@ -42,20 +39,15 @@ imagens_mini.forEach(imagem => {
 
 /* DADOS */
 
-document.getElementById("nome-produto").textContent =
-    nomeProduto;
+document.getElementById("nome-produto").textContent = nomeProduto;
 
-document.getElementById("descricao-produto").textContent =
-    descricao;
+document.getElementById("descricao-produto").textContent = descricao;
 
-document.getElementById("preco-promocional").textContent =
-    `R$ ${preco_Promocional.toFixed(2)}`;
+document.getElementById("preco-promocional").textContent = `R$ ${preco_Promocional.toFixed(2)}`;
 
-document.getElementById("preco-antigo").textContent =
-    `R$ ${preco_Antigo.toFixed(2)}`;
+document.getElementById("preco-antigo").textContent = `R$ ${preco_Antigo.toFixed(2)}`;
 
-document.getElementById("desconto").textContent =
-    desconto;
+document.getElementById("desconto").textContent = desconto;
 
 /* CORES 
 
@@ -91,26 +83,22 @@ let quantidadeSelecionada = 1;
 
 const numero = document.getElementById("quantidade-numero");
 
-document.getElementById("aumentar")
-    .addEventListener("click", () => {
+document.getElementById("aumentar").addEventListener("click", () => {
 
         if (quantidadeSelecionada < quantidade) {
-
             quantidadeSelecionada++;
-
-            numero.textContent =
-                quantidadeSelecionada;
+            numero.textContent = quantidadeSelecionada;
+        } else {
+            alert("Você atingiu o limite do estoque!");
         }
     });
 
-document.getElementById("diminuir")
-    .addEventListener("click", () => {
+document.getElementById("diminuir").addEventListener("click", () => {
 
         if (quantidadeSelecionada > 1) {
-
             quantidadeSelecionada--;
-
-            numero.textContent =
-                quantidadeSelecionada;
+            numero.textContent = quantidadeSelecionada;
+        }  else {
+            alert("Limite minímo atingido!");
         }
     });
