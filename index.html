@@ -11,204 +11,205 @@
 </head>
 
 <body>
-    <!--Linkando o JavaScript com HTML-->
-    <script src="js/product.js"></script>
+    <main>
+        <!--Linkando o JavaScript com HTML-->
+        <script src="js/product.js"></script>
 
-    <!--Cabeçalho-->
-    <header>
-        <div class="topo">
-            <div class="left">
-                <img src="assets/HealthNorthOFFICIAL.ico"
-                    alt="Logo da Health North, ela é de cor roxa gradiente com o N de North/Norte">
-                <h1>Health North</h1>
+        <!--Cabeçalho-->
+        <header>
+            <div class="topo">
+                <div class="left">
+                    <img src="assets/HealthNorthOFFICIAL.ico"
+                        alt="Logo da Health North, ela é de cor roxa gradiente com o N de North/Norte">
+                    <h1>Health North</h1>
+
+                </div>
+
+                <div class="center">
+
+                    <!--<Nav>egar pelo sites, colocando o seletor de classe com o CSS3-->
+                    <nav class="menu">
+                        <!--O <a /> é um local para linkar urls diferentes-->
+                        <a id="idinstrumentais" href="">Instrumentais</a>
+                        <a href="">Descartáveis</a>
+                        <a href="">Equipamentos</a>
+                        <a href="">Esterializados</a>
+                        <a href="">Suprimentos</a>
+
+                    </nav>
+                </div>
+
+                <div class="right-icons">
+                    <div class="caixa-pesquisa">
+                        <input type="text" placeholder="Buscar produtos">
+                        <img src="assets/search.png" alt="Lupa de pesquisa">
+                    </div>
+                    <div class="icones">
+                        <a href="user.html"> <img src="assets/user.png" alt="usuário"></a>
+                        <a href="favorites.html"> <img src="assets/heart.png" alt="favoritos"></a>
+                        <a href="cart.html"><img src="assets/shoppingcart.png" alt="carrinho de compras"></a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <article class="banner">
+            <div class="orfeta-escopo">
+
+                <div class="oferta">
+                    <input type="text" placeholder="Oferta de lançamento">
+                </div>
+                <div class="oferta2">
+                    <h2>Estetoscópios Premium em Oferta</h2>
+
+                </div>
+                <p>Alta precisão e durabilidade para sua prática clínica. Aproveite os descontos de até 20% em toda a
+                    linha
+                    de diagnóstico.</p>
+                <div class="oferta3">
+                    <button class="btn-comprar">Ver oferta</button>
+                </div>
+            </div>
+            <div class="banner-img">
+                <img src="assets/HealthNorthTrueLast_Banner.png"
+                    alt="Imagem de um estetoscópio premium, com detalhes em roxo e prata, destacando a qualidade e design moderno do produto. O estetoscópio está posicionado em um fundo branco, realçando suas características elegantes e profissionais.">
+            </div>
+
+        </article>
+
+        <section class="ofertas">
+            <div class="produtos-destaque">
+                <div class="titulo-produtos">
+                    <h2>Produtos em Destaque</h2>
+                    <a href="">Ver Tudo &rightarrow;</a>
+                </div>
+
+                <!--Aqui começa a 1° (primeira) linha dos cards-->
+                <div class="lista-produtos">
+                    <div class="produto">
+                        <img src="assets/card1.png" alt="Carpule anestésico de alto padrão para anastesia odontologica">
+                        <h3>Carpule anestésico</h3>
+                        <p class="preco">R$ 149,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/Card2.png" alt="Estetoscópio de alta qualidade para ascuta e afins">
+                        <h3>Estetoscópio</h3>
+                        <p class="preco">R$ 289,00 <span>R$ 349,00</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/Card3.png" alt="Termômetro">
+                        <h3>Termômetro</h3>
+                        <p class="preco">R$ 45,00</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/Card4.png" alt="Aferidor de pressão">
+                        <h3>Aferidor de pressão</h3>
+                        <p class="preco">R$ 199,00</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                </div>
+                <!--Aqui começa a 2° (segunda) linha dos cards.-->
+                <div class="lista-produtos">
+                    <div class="produto">
+                        <img src="assets/card5.png" alt="Fórceps odontológico para cirúrgia.">
+                        <h3>Fórceps</h3>
+                        <p class="preco">R$ 89,99</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/card6.png" alt="Alavanca Seldin para cirúrgia odontológica">
+                        <h3>Alavanca Seldin</h3>
+                        <p class="preco">R$ 69,99 <span>R$ 109,00</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/card7.png" alt="Kit sutura/prática">
+                        <h3>Kit sutura</h3>
+                        <p class="preco">R$ 429,00</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+                    <div class="produto">
+                        <img src="assets/card8.png" alt="Hidroxido de cálcio PA">
+                        <h3>Hidroxido de cálcio PA</h3>
+                        <p class="preco">R$ 39,00</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+
+        </section>
+
+        <footer class="rodape">
+
+            <div class="rodapeTopo">
+
+                <div class="infoItem">
+                    <img src="assets/DeliveryTruck.png" alt="Frete Rápido">
+
+                    <div class="textoInfo">
+                        <h4>Frete Rápido</h4>
+                        <span>Para todo o Brasil</span>
+                    </div>
+                </div>
+
+                <div class="infoItem">
+                    <img src="assets/security.png" alt="Pagamento Seguro">
+
+                    <div class="textoInfo">
+                        <h4>Pagamento Seguro</h4>
+                        <span>SSL de 256 bits</span>
+                    </div>
+                </div>
+
+                <div class="infoItem">
+                    <img src="assets/support.png" alt="Suporte Especializado">
+
+                    <div class="textoInfo">
+                        <h4>Suporte Especializado</h4>
+                        <span>De Segunda a Sexta</span>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="center">
+            <div class="rodapeBottom">
 
-                <!--<Nav>egar pelo sites, colocando o seletor de classe com o CSS3-->
-                <nav class="menu">
-                    <!--O <a /> é um local para linkar urls diferentes-->
-                    <a id="idinstrumentais" href="">Instrumentais</a>
-                    <a href="">Descartáveis</a>
-                    <a href="">Equipamentos</a>
-                    <a href="">Esterializados</a>
-                    <a href="">Suprimentos</a>
+                <div class="bottomEsquerdo">
+                    <h4>HEALTH NORTH</h4>
+                    <p>© 2026 Health North Healthcare Solutions.</p>
+                </div>
 
+                <nav class="bottomDireito">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Frete & Devolução</a>
+                    <a href="#">Nos contate</a>
+                    <a href="#">Sobre nós</a>
+
+                    <a href="#">
+                        <img src="assets/whatsapp.png" alt="Whatsapp">
+                    </a>
+                    <a href="#">
+                        <img src="assets/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="assets/facebook.png" alt="Facebook">
+                    </a>
                 </nav>
-            </div>
-
-            <div class="right-icons">
-                <div class="caixa-pesquisa">
-                    <input type="text" placeholder="Buscar produtos">
-                    <img src="assets/search.png" alt="Lupa de pesquisa">
-                </div>
-                <div class="icones">
-                    <a href="user.html"> <img src="assets/user.png" alt="usuário"></a>
-                    <a href="favorites.html"> <img src="assets/heart.png" alt="favoritos"></a>
-                    <a href="cart.html"><img src="assets/shoppingcart.png" alt="carrinho de compras"></a>
-                </div>
-            </div>
-        </div>
-
-    </header>
-    <article class="banner">
-        <div class="orfeta-escopo">
-
-            <div class="oferta">
-                <input type="text" placeholder="Oferta de lançamento">
-            </div>
-            <div class="oferta2">
-                <h2>Estetoscópios Premium em Oferta</h2>
 
             </div>
-            <p>Alta precisão e durabilidade para sua prática clínica. Aproveite os descontos de até 20% em toda a linha
-                de diagnóstico.</p>
-            <div class="oferta3">
-                <button class="btn-comprar">Ver oferta</button>
-            </div>
-        </div>
-        <div class="banner-img">
-            <img src="assets/HealthNorthTrueLast_Banner.png"
-                alt="Imagem de um estetoscópio premium, com detalhes em roxo e prata, destacando a qualidade e design moderno do produto. O estetoscópio está posicionado em um fundo branco, realçando suas características elegantes e profissionais.">
-        </div>
 
-    </article>
-    
-    <section class="ofertas">
-        <div class="produtos-destaque">
-            <div class="titulo-produtos">
-                <h2>Produtos em Destaque</h2>
-                <a href="">Ver Tudo &rightarrow;</a>
-            </div>
-
-            <!--Aqui começa a 1° (primeira) linha dos cards-->
-            <div class="lista-produtos">
-                <div class="produto">
-                    <img src="assets/card1.png" alt="Carpule anestésico de alto padrão para anastesia odontologica">
-                    <h3>Carpule anestésico</h3>
-                    <p class="preco">R$ 149,99</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-                <div class="produto">
-                    <img src="assets/Card2.png" alt="Estetoscópio de alta qualidade para ascuta e afins">
-                    <h3>Estetoscópio</h3>
-                    <p class="preco">R$ 289,00 <span>R$ 349,00</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-                <div class="produto">
-                    <img src="assets/Card3.png" alt="Termômetro">
-                    <h3>Termômetro</h3>
-                    <p class="preco">R$ 45,00</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-                <div class="produto">
-                    <img src="assets/Card4.png" alt="Aferidor de pressão">
-                    <h3>Aferidor de pressão</h3>
-                    <p class="preco">R$ 199,00</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-            </div>
-            <!--Aqui começa a 2° (segunda) linha dos cards.-->
-            <div class="lista-produtos">
-                <div class="produto">
-                    <img src="assets/card5.png" alt="Fórceps odontológico para cirúrgia.">
-                    <h3>Fórceps</h3>
-                    <p class="preco">R$ 89,99</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-                <div class="produto">
-                    <img src="assets/card6.png" alt="Alavanca Seldin para cirúrgia odontológica">
-                    <h3>Alavanca Seldin</h3>
-                    <p class="preco">R$ 69,99 <span>R$ 109,00</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-                <div class="produto">
-                    <img src="assets/card7.png" alt="Kit sutura/prática">
-                    <h3>Kit sutura</h3>
-                    <p class="preco">R$ 429,00</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-                
-                <div class="produto">
-                    <img src="assets/card8.png" alt="Hidroxido de cálcio PA">
-                    <h3>Hidroxido de cálcio PA</h3>
-                    <p class="preco">R$ 39,00</p>
-                    <button>Adicionar ao carrinho</button>
-                </div>
-
-    </section>
-
- <footer class="rodape">
-
-    <div class="rodapeTopo">
-
-        <div class="infoItem">
-            <img src="assets/DeliveryTruck.png" alt="Frete Rápido">
-
-            <div class="textoInfo">
-                <h4>Frete Rápido</h4>
-                <span>Para todo o Brasil</span>
-            </div>
-        </div>
-
-        <div class="infoItem">
-            <img src="assets/security.png" alt="Pagamento Seguro">
-
-            <div class="textoInfo">
-                <h4>Pagamento Seguro</h4>
-                <span>SSL de 256 bits</span>
-            </div>
-        </div>
-
-        <div class="infoItem">
-            <img src="assets/support.png" alt="Suporte Especializado">
-
-            <div class="textoInfo">
-                <h4>Suporte Especializado</h4>
-                <span>De Segunda a Sexta</span>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="rodapeBottom">
-
-        <div class="bottomEsquerdo">
-            <h4>HEALTH NORTH</h4>
-            <p>© 2026 Health North Healthcare Solutions.</p>
-        </div>
-
-        <nav class="bottomDireito">
-            <a href="#">Privacidade</a>
-            <a href="#">Termos de uso</a>
-            <a href="#">Frete & Devolução</a>
-            <a href="#">Nos contate</a>
-            <a href="#">Sobre nós</a>
-
-            <a href="#">
-                <img src="assets/whatsapp.png" alt="Whatsapp">
-            </a>
-
-            <a href="#">
-                <img src="assets/instagram.png" alt="Instagram">
-            </a>
-
-            <a href="#">
-                <img src="assets/facebook.png" alt="Facebook">
-            </a>
-        </nav>
-
-    </div>
-
-</footer>
-
+        </footer>
+    </main>
 
 </body>
 
