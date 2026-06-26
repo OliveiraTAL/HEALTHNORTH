@@ -516,7 +516,7 @@ header {
 .area-frete,
 .pagamento {
     flex: 1;
-    background: white;
+    background: transparent;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 20px;
