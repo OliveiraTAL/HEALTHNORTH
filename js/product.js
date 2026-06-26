@@ -85,20 +85,32 @@ const numero = document.getElementById("quantidade-numero");
 
 document.getElementById("aumentar").addEventListener("click", () => {
 
-        if (quantidadeSelecionada < quantidade) {
-            quantidadeSelecionada++;
-            numero.textContent = quantidadeSelecionada;
-        } else {
-            alert("Você atingiu o limite do estoque!");
-        }
-    });
+    if (quantidadeSelecionada < quantidade) {
+        quantidadeSelecionada++;
+        numero.textContent = quantidadeSelecionada;
+    } else {
+        alert("Você atingiu o limite do estoque!");
+    }
+});
 
 document.getElementById("diminuir").addEventListener("click", () => {
 
-        if (quantidadeSelecionada > 1) {
-            quantidadeSelecionada--;
-            numero.textContent = quantidadeSelecionada;
-        }  else {
-            alert("Limite minímo atingido!");
-        }
+    if (quantidadeSelecionada > 1) {
+        quantidadeSelecionada--;
+        numero.textContent = quantidadeSelecionada;
+    } else {
+        alert("Limite minímo atingido!");
+    }
+});
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        card.style.transition = "0.35s";
     });
+
+    card.addEventListener("mouseleave", () => {
+        card.style.transition = "0.35s";
+    });
+});
